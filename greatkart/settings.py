@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'category',
     'accounts',
     'store',
-    'carts'
+    'carts',
+    'rest_framework',
+    'redis_practice',
+    'utils'
 ]
 
 MIDDLEWARE = [
@@ -79,10 +82,21 @@ WSGI_APPLICATION = 'greatkart.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',  # Change this to MySQL engine
+        'NAME': 'greatkart',          # Replace with your MySQL database name
+        'USER': 'admin',          # Replace with your MySQL username
+        'PASSWORD': 'admin@1234',  # Replace with your MySQL password
+        'HOST': 'localhost',                   # Or the host of your MySQL server (e.g., '127.0.0.1')
+        'PORT': '3306',                        # MySQL default port
     }
 }
 
@@ -139,3 +153,15 @@ MEDIA_ROOT = BASE_DIR / 'media'
 AUTH_USER_MODEL = 'accounts.Account'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#redis configuration
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379",  # Redis DB 1
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
