@@ -1,0 +1,466 @@
+.
+├── accounts
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── carts
+│   ├── admin.py
+│   ├── apps.py
+│   ├── context_processors.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── category
+│   ├── admin.py
+│   ├── apps.py
+│   ├── context_processors.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_auto_20250515_0708.py
+│   │   ├── 0003_auto_20250515_0714.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── .gitignore
+├── greatkart
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── static
+│   │   ├── css
+│   │   │   ├── bootstrap.css
+│   │   │   ├── .DS_Store
+│   │   │   ├── responsive.css
+│   │   │   ├── responsive.css.map
+│   │   │   ├── ui.css
+│   │   │   └── ui.css.map
+│   │   ├── fonts
+│   │   │   ├── .DS_Store
+│   │   │   ├── fontawesome
+│   │   │   │   ├── css
+│   │   │   │   │   ├── all.css
+│   │   │   │   │   ├── all.min.css
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── .DS_Store
+│   │   │   │   └── webfonts
+│   │   │   │       ├── fa-brands-400.eot
+│   │   │   │       ├── fa-brands-400.svg
+│   │   │   │       ├── fa-brands-400.ttf
+│   │   │   │       ├── fa-brands-400.woff
+│   │   │   │       ├── fa-brands-400.woff2
+│   │   │   │       ├── fa-regular-400.eot
+│   │   │   │       ├── fa-regular-400.svg
+│   │   │   │       ├── fa-regular-400.ttf
+│   │   │   │       ├── fa-regular-400.woff
+│   │   │   │       ├── fa-regular-400.woff2
+│   │   │   │       ├── fa-solid-900.eot
+│   │   │   │       ├── fa-solid-900.svg
+│   │   │   │       ├── fa-solid-900.ttf
+│   │   │   │       ├── fa-solid-900.woff
+│   │   │   │       └── fa-solid-900.woff2
+│   │   │   └── roboto
+│   │   │       ├── font.css
+│   │   │       ├── font-min.css
+│   │   │       ├── Roboto-Bold.ttf
+│   │   │       ├── Roboto-Light.ttf
+│   │   │       ├── Roboto-Medium.ttf
+│   │   │       ├── Roboto-Regular.ttf
+│   │   │       └── Roboto-Thin.ttf
+│   │   ├── images
+│   │   │   ├── avatars
+│   │   │   │   ├── avatar1.jpg
+│   │   │   │   ├── avatar2.jpg
+│   │   │   │   └── avatar3.jpg
+│   │   │   ├── banners
+│   │   │   │   └── 1.jpg
+│   │   │   ├── favicon.ico
+│   │   │   ├── icons
+│   │   │   │   ├── flag-in.png
+│   │   │   │   ├── flag-kr.png
+│   │   │   │   ├── flag-tr.png
+│   │   │   │   ├── flag-usa.png
+│   │   │   │   ├── flag-vt.png
+│   │   │   │   ├── pay-american-ex.png
+│   │   │   │   ├── pay-bank.png
+│   │   │   │   ├── pay-mastercard.png
+│   │   │   │   ├── pay-visa-el.png
+│   │   │   │   ├── pay-visa.png
+│   │   │   │   ├── stars-active.svg
+│   │   │   │   └── starts-disable.svg
+│   │   │   ├── items
+│   │   │   │   ├── 10.jpg
+│   │   │   │   ├── 11.jpg
+│   │   │   │   ├── 12-1.jpg
+│   │   │   │   ├── 12-2.jpg
+│   │   │   │   ├── 12.jpg
+│   │   │   │   ├── 1.jpg
+│   │   │   │   ├── 2.jpg
+│   │   │   │   ├── 3.jpg
+│   │   │   │   ├── 4.jpg
+│   │   │   │   ├── 5.jpg
+│   │   │   │   ├── 6.jpg
+│   │   │   │   ├── 7.jpg
+│   │   │   │   ├── 8.jpg
+│   │   │   │   ├── 9.jpg
+│   │   │   │   └── .DS_Store
+│   │   │   ├── logo.png
+│   │   │   └── misc
+│   │   │       ├── appstore.png
+│   │   │       ├── btn-paypal.png
+│   │   │       ├── cash.jpg
+│   │   │       ├── map.jpg
+│   │   │       ├── payment-bank.png
+│   │   │       ├── payment-card.png
+│   │   │       ├── payment-paypal.png
+│   │   │       ├── payments.png
+│   │   │       └── playmarket.png
+│   │   └── js
+│   │       ├── bootstrap.bundle.min.js
+│   │       ├── .DS_Store
+│   │       ├── jquery-2.0.0.min.js
+│   │       └── script.js
+│   ├── urls.py
+│   ├── views.py
+│   └── wsgi.py
+├── manage.py
+├── media
+│   └── photos
+│       ├── categories
+│       │   ├── jackets.jpg
+│       │   ├── jeans.jpg
+│       │   ├── shirts.jpg
+│       │   ├── shoes.png
+│       │   ├── smartphone.jpg
+│       │   └── tshirts.jpg
+│       └── products
+│           ├── atx-jeans.jpg
+│           ├── blue-jeans-demin.jpg
+│           ├── blue-shirt.jpg
+│           ├── buffalo-jeans.jpg
+│           ├── great-t-shirt.jpg
+│           ├── john-player-jeans.jpg
+│           ├── jordan-true-basketball-shoes.jpg
+│           ├── mavi-jeans.jpg
+│           ├── motorola-edge-50-fusion-marshmallow-blue-128-gb.jpg
+│           ├── motorola-edge-60-pro-pantone-dazzling-blue-256-gb.jpg
+│           ├── motorola-edge-60-pro-pantone-shadow-256-gb.jpg
+│           ├── motorola-edge-60-pro-pantone-sparkling-grape-256-gb.jpg
+│           ├── motorola-edge-60-stylus-pantone-gibraltar-sea-256-gb.jpg
+│           ├── motorola-g05-forest-green-64-gb.jpg
+│           ├── motorola-g05-plum-red-64-gb.jpg
+│           ├── motorola-g35-5g-leaf-green-128-gb.jpg
+│           ├── motorola-g45-5g-brilliant-blue-128-gb.jpg
+│           ├── motorola-g45-5g-brilliant-green-128-gb.jpg
+│           ├── motorola-g45-5g-pink-lavender-128-gb.jpg
+│           ├── motorola-g45-5g-viva-magenta-128-gb.jpg
+│           ├── motorola-g64-5g-ice-lilac-256-gb.jpg
+│           ├── nothing-phone-3a-blue-128-gb.jpg
+│           ├── nothing-phone-3a-pro-grey-256-gb.jpg
+│           ├── poco-c71-desert-gold-64-gb.jpg
+│           ├── poco-c71-power-black-64-gb.jpg
+│           ├── poco-c75-5g-aqua-bliss-128-gb.jpg
+│           ├── poco-c75-5g-aqua-bliss-64-gb.jpg
+│           ├── poco-c75-5g-enchanted-green-64-gb.jpg
+│           ├── poco-c75-5g-silver-stardust-64-gb.jpg
+│           ├── poco-m6-plus-5g-graphite-black-128-gb.jpg
+│           ├── poco-m6-plus-5g-misty-lavender-128-gb.jpg
+│           ├── poco-m7-5g-satin-black-128-gb.jpg
+│           ├── poco-m7-pro-5g-lunar-dust-128-gb.jpg
+│           ├── puma-ferrari-shoes.jpg
+│           ├── realme-13-pro-5g-monet-gold-256-gb.jpg
+│           ├── realme-c61-safari-green-64-gb.jpg
+│           ├── realme-c63-5g-charger-in-the-box-forest-green-128-gb.jpg
+│           ├── realme-narzo-n61-vyage-blue-64-gb.jpg
+│           ├── realme-p3x-5g-midnight-blue-128-gb.jpg
+│           ├── redmi-a3x-midnight-black-64-gb.jpg
+│           ├── redmi-a3x-ocean-green-64-gb.jpg
+│           ├── samsung-galaxy-f05-twilight-blue-64-gb.jpg
+│           ├── samsung-galaxy-m35-5g-moonlight-blue-128-gb.jpg
+│           ├── samsung-galaxy-m35-5g-thunder-grey-128-gb.jpg
+│           ├── us-polo-assiagn-jacket.jpg
+│           ├── vivo-t4-5g-emerald-blaze-256-gb.jpg
+│           ├── vivo-t4-5g-phantom-grey-128-gb.jpg
+│           ├── vivo-t4-5g-phantom-grey-256-gb.jpg
+│           ├── vivo-t4x-5g-marine-blue-128-gb.jpg
+│           ├── vivo-t4x-5g-pronto-purple-128-gb.jpg
+│           ├── vivo-t4x-5g-pronto-purple-256-gb.jpg
+│           └── wrangler-shirt.jpg
+├── project_structure.txt
+├── README.md
+├── redis_practice
+│   └── migrations
+├── static
+│   ├── admin
+│   │   ├── css
+│   │   │   ├── autocomplete.css
+│   │   │   ├── base.css
+│   │   │   ├── changelists.css
+│   │   │   ├── dark_mode.css
+│   │   │   ├── dashboard.css
+│   │   │   ├── fonts.css
+│   │   │   ├── forms.css
+│   │   │   ├── login.css
+│   │   │   ├── nav_sidebar.css
+│   │   │   ├── responsive.css
+│   │   │   ├── responsive_rtl.css
+│   │   │   ├── rtl.css
+│   │   │   ├── vendor
+│   │   │   │   └── select2
+│   │   │   │       ├── LICENSE-SELECT2.md
+│   │   │   │       ├── select2.css
+│   │   │   │       └── select2.min.css
+│   │   │   └── widgets.css
+│   │   ├── fonts
+│   │   │   ├── LICENSE.txt
+│   │   │   ├── README.txt
+│   │   │   ├── Roboto-Bold-webfont.woff
+│   │   │   ├── Roboto-Light-webfont.woff
+│   │   │   └── Roboto-Regular-webfont.woff
+│   │   ├── img
+│   │   │   ├── calendar-icons.svg
+│   │   │   ├── gis
+│   │   │   │   ├── move_vertex_off.svg
+│   │   │   │   └── move_vertex_on.svg
+│   │   │   ├── icon-addlink.svg
+│   │   │   ├── icon-alert.svg
+│   │   │   ├── icon-calendar.svg
+│   │   │   ├── icon-changelink.svg
+│   │   │   ├── icon-clock.svg
+│   │   │   ├── icon-deletelink.svg
+│   │   │   ├── icon-no.svg
+│   │   │   ├── icon-unknown-alt.svg
+│   │   │   ├── icon-unknown.svg
+│   │   │   ├── icon-viewlink.svg
+│   │   │   ├── icon-yes.svg
+│   │   │   ├── inline-delete.svg
+│   │   │   ├── LICENSE
+│   │   │   ├── README.txt
+│   │   │   ├── search.svg
+│   │   │   ├── selector-icons.svg
+│   │   │   ├── sorting-icons.svg
+│   │   │   ├── tooltag-add.svg
+│   │   │   └── tooltag-arrowright.svg
+│   │   └── js
+│   │       ├── actions.js
+│   │       ├── actions.min.js
+│   │       ├── admin
+│   │       │   ├── DateTimeShortcuts.js
+│   │       │   └── RelatedObjectLookups.js
+│   │       ├── autocomplete.js
+│   │       ├── calendar.js
+│   │       ├── cancel.js
+│   │       ├── change_form.js
+│   │       ├── collapse.js
+│   │       ├── collapse.min.js
+│   │       ├── core.js
+│   │       ├── filters.js
+│   │       ├── inlines.js
+│   │       ├── inlines.min.js
+│   │       ├── jquery.init.js
+│   │       ├── nav_sidebar.js
+│   │       ├── popup_response.js
+│   │       ├── prepopulate_init.js
+│   │       ├── prepopulate.js
+│   │       ├── prepopulate.min.js
+│   │       ├── SelectBox.js
+│   │       ├── SelectFilter2.js
+│   │       ├── theme.js
+│   │       ├── urlify.js
+│   │       └── vendor
+│   │           ├── jquery
+│   │           │   ├── jquery.js
+│   │           │   ├── jquery.min.js
+│   │           │   └── LICENSE.txt
+│   │           ├── select2
+│   │           │   ├── i18n
+│   │           │   │   ├── af.js
+│   │           │   │   ├── ar.js
+│   │           │   │   ├── az.js
+│   │           │   │   ├── bg.js
+│   │           │   │   ├── bn.js
+│   │           │   │   ├── bs.js
+│   │           │   │   ├── ca.js
+│   │           │   │   ├── cs.js
+│   │           │   │   ├── da.js
+│   │           │   │   ├── de.js
+│   │           │   │   ├── dsb.js
+│   │           │   │   ├── el.js
+│   │           │   │   ├── en.js
+│   │           │   │   ├── es.js
+│   │           │   │   ├── et.js
+│   │           │   │   ├── eu.js
+│   │           │   │   ├── fa.js
+│   │           │   │   ├── fi.js
+│   │           │   │   ├── fr.js
+│   │           │   │   ├── gl.js
+│   │           │   │   ├── he.js
+│   │           │   │   ├── hi.js
+│   │           │   │   ├── hr.js
+│   │           │   │   ├── hsb.js
+│   │           │   │   ├── hu.js
+│   │           │   │   ├── hy.js
+│   │           │   │   ├── id.js
+│   │           │   │   ├── is.js
+│   │           │   │   ├── it.js
+│   │           │   │   ├── ja.js
+│   │           │   │   ├── ka.js
+│   │           │   │   ├── km.js
+│   │           │   │   ├── ko.js
+│   │           │   │   ├── lt.js
+│   │           │   │   ├── lv.js
+│   │           │   │   ├── mk.js
+│   │           │   │   ├── ms.js
+│   │           │   │   ├── nb.js
+│   │           │   │   ├── ne.js
+│   │           │   │   ├── nl.js
+│   │           │   │   ├── pl.js
+│   │           │   │   ├── ps.js
+│   │           │   │   ├── pt-BR.js
+│   │           │   │   ├── pt.js
+│   │           │   │   ├── ro.js
+│   │           │   │   ├── ru.js
+│   │           │   │   ├── sk.js
+│   │           │   │   ├── sl.js
+│   │           │   │   ├── sq.js
+│   │           │   │   ├── sr-Cyrl.js
+│   │           │   │   ├── sr.js
+│   │           │   │   ├── sv.js
+│   │           │   │   ├── th.js
+│   │           │   │   ├── tk.js
+│   │           │   │   ├── tr.js
+│   │           │   │   ├── uk.js
+│   │           │   │   ├── vi.js
+│   │           │   │   ├── zh-CN.js
+│   │           │   │   └── zh-TW.js
+│   │           │   ├── LICENSE.md
+│   │           │   ├── select2.full.js
+│   │           │   └── select2.full.min.js
+│   │           └── xregexp
+│   │               ├── LICENSE.txt
+│   │               ├── xregexp.js
+│   │               └── xregexp.min.js
+│   ├── css
+│   │   ├── bootstrap.css
+│   │   ├── responsive.css
+│   │   ├── responsive.css.map
+│   │   ├── ui.css
+│   │   └── ui.css.map
+│   ├── fonts
+│   │   ├── fontawesome
+│   │   │   ├── css
+│   │   │   │   ├── all.css
+│   │   │   │   └── all.min.css
+│   │   │   └── webfonts
+│   │   │       ├── fa-brands-400.eot
+│   │   │       ├── fa-brands-400.svg
+│   │   │       ├── fa-brands-400.ttf
+│   │   │       ├── fa-brands-400.woff
+│   │   │       ├── fa-brands-400.woff2
+│   │   │       ├── fa-regular-400.eot
+│   │   │       ├── fa-regular-400.svg
+│   │   │       ├── fa-regular-400.ttf
+│   │   │       ├── fa-regular-400.woff
+│   │   │       ├── fa-regular-400.woff2
+│   │   │       ├── fa-solid-900.eot
+│   │   │       ├── fa-solid-900.svg
+│   │   │       ├── fa-solid-900.ttf
+│   │   │       ├── fa-solid-900.woff
+│   │   │       └── fa-solid-900.woff2
+│   │   └── roboto
+│   │       ├── font.css
+│   │       ├── font-min.css
+│   │       ├── Roboto-Bold.ttf
+│   │       ├── Roboto-Light.ttf
+│   │       ├── Roboto-Medium.ttf
+│   │       ├── Roboto-Regular.ttf
+│   │       └── Roboto-Thin.ttf
+│   ├── images
+│   │   ├── avatars
+│   │   │   ├── avatar1.jpg
+│   │   │   ├── avatar2.jpg
+│   │   │   └── avatar3.jpg
+│   │   ├── banners
+│   │   │   ├── 1.jpg
+│   │   │   ├── 2.jpg
+│   │   │   └── home_banner.jpg
+│   │   ├── favicon.ico
+│   │   ├── icons
+│   │   │   ├── flag-in.png
+│   │   │   ├── flag-kr.png
+│   │   │   ├── flag-tr.png
+│   │   │   ├── flag-usa.png
+│   │   │   ├── flag-vt.png
+│   │   │   ├── pay-american-ex.png
+│   │   │   ├── pay-bank.png
+│   │   │   ├── pay-mastercard.png
+│   │   │   ├── pay-visa-el.png
+│   │   │   ├── pay-visa.png
+│   │   │   ├── stars-active.svg
+│   │   │   └── starts-disable.svg
+│   │   ├── items
+│   │   │   ├── 10.jpg
+│   │   │   ├── 11.jpg
+│   │   │   ├── 12-1.jpg
+│   │   │   ├── 12-2.jpg
+│   │   │   ├── 12.jpg
+│   │   │   ├── 1.jpg
+│   │   │   ├── 2.jpg
+│   │   │   ├── 3.jpg
+│   │   │   ├── 4.jpg
+│   │   │   ├── 5.jpg
+│   │   │   ├── 6.jpg
+│   │   │   ├── 7.jpg
+│   │   │   ├── 8.jpg
+│   │   │   └── 9.jpg
+│   │   ├── logo.png
+│   │   └── misc
+│   │       ├── appstore.png
+│   │       ├── btn-paypal.png
+│   │       ├── cash.jpg
+│   │       ├── map.jpg
+│   │       ├── payment-bank.png
+│   │       ├── payment-card.png
+│   │       ├── payment-paypal.png
+│   │       ├── payments.png
+│   │       └── playmarket.png
+│   └── js
+│       ├── bootstrap.bundle.min.js
+│       ├── jquery-2.0.0.min.js
+│       └── script.js
+├── store
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── templates
+│   ├── base.html
+│   ├── home.html
+│   ├── include
+│   │   ├── footer.html
+│   │   └── navbar.html
+│   └── store
+│       ├── cart.html
+│       ├── product_detail.html
+│       └── store.html
+└── utils
+
+62 directories, 402 files
